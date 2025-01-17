@@ -8,11 +8,11 @@ import { SkillsIcons } from "../../utils/icons";
 const About = () => {
   return (
     <>
-      <Heading Heading={"About me"} />
+      {/* <Heading Heading={"About me"} /> */}
       <div className="about">
         <div className="info">
           <motion.p {...animations.fade}>
-            👋 Hi there! I'm Dev a passionate web developer. I have a strong
+            {/* 👋 Hi there! I'm Dev a passionate web developer. I have a strong
             background in frontend development using React and typescript, as
             well as experience with various JavaScript and CSS libraries and
             frameworks such as Next.JS and Tailwind. 🌐 In addition to my
@@ -22,12 +22,12 @@ const About = () => {
             between the front and back ends of web development projects. 🚀 I'm
             excited to continue my journey in the tech world, eager to learn and
             contribute to innovative projects. Let's connect and explore
-            opportunities together!
+            opportunities together! */}
           </motion.p>
         </div>
         <motion.div {...animations.fade} className="skills">
           <h2>Stuff i know : </h2>
-          <p style={{ marginBottom: "1rem" }}>(Only the imp ones)</p>
+          {/* <p style={{ marginBottom: "1rem" }}>(Only the imp ones)</p> */}
           <div className="icons">
             {SkillsIcons.map(({ Component, color, skill, name }, index) => (
               <Component

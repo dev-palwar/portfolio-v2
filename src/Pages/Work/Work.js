@@ -36,7 +36,7 @@ const Work = () => {
 
   return (
     <div className="work">
-      <Heading Heading={"my work"} />
+      {/* <Heading Heading={"my work"} /> */}
       <motion.div
         className="icons"
         {...animations.bar}

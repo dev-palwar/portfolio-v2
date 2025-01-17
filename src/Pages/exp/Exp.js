@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.scss";
-import Heading from "../../Components/Heading/Heading";
 
 const Experience = () => {
   const experiences = [
@@ -9,7 +8,8 @@ const Experience = () => {
       company: "Lumara jewels",
       duration: "Dec 2023 - May 2024",
       responsibilities: [
-        "Translated Figma designs into a fully functional homepage using Sass, implementing a backend-driven UI.",
+        "Translated Figma designs into a fully functional homepage using Sass",
+        "Implemented a backend-driven UI.",
         "Implemented authentication mechanisms, including manual and OTP-based login.",
         "Streamlined the flow from the product details page to the cart page.",
         "Developed a comprehensive product details page, fetching data from the backend and integrating components like carousels, image galleries, and product customization options for jewelry according to their metals, diamonds, and size.",
@@ -20,7 +20,7 @@ const Experience = () => {
 
   return (
     <section className="experience">
-      <Heading Heading={"Experience"} />
+      {/* <Heading Heading={"Experience"} /> */}
       <div className="experience__list">
         {experiences.map((exp, index) => (
           <div key={index} className="experience__card">

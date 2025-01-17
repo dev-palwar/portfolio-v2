@@ -3,13 +3,17 @@
 $primaryColor : rgb(151, 117, 250);
 $primaryHeading : 4.1rem;
 $buttonText: white;
-$backgroundColor: #1b1f22;
+$backgroundColor: #18181b;
 
 * {
     margin: 0;
     padding: 0;
 }
 
+::selection {
+    background-color: white;
+    color: #000;
+}
 
 html::-webkit-scrollbar {
     display: none;
@@ -35,5 +39,15 @@ a {
     padding: 14px;
     max-width: 1180px;
     margin: auto;
+    justify-content: center;
+}
+
+.work,
+.about,
+home {
+    height: 85vh;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
