@@ -4,6 +4,15 @@ import "./style.scss";
 const Experience = () => {
   const experiences = [
     {
+      title: "Software Developer Intern",
+      company: "ThriberX",
+      duration: "Jan 2025 - Present",
+      responsibilities: [
+        "Creating smooth and modern mobile applications using Kotlin and Jetpack Compose.",
+      ],
+      link: "https://www.thriber.com/",
+    },
+    {
       title: "Frontend Developer Intern",
       company: "Lumara jewels",
       duration: "Dec 2023 - May 2024",
@@ -15,6 +24,7 @@ const Experience = () => {
         "Developed a comprehensive product details page, fetching data from the backend and integrating components like carousels, image galleries, and product customization options for jewelry according to their metals, diamonds, and size.",
         "Created a dynamic cart page with three subpages: cart details, address selection, and checkout, ensuring a smooth checkout process",
       ],
+      link: "https://lumarajewels.com/",
     },
   ];
 
@@ -26,11 +36,7 @@ const Experience = () => {
           <div key={index} className="experience__card">
             <div className="experience__card-content">
               <h3 className="experience__card-title">{exp.title}</h3>
-              <a
-                href="https://lumarajewels.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={exp.link} target="_blank" rel="noreferrer">
                 <p className="experience__card-company">{exp.company}</p>
               </a>
               <p className="experience__card-duration">{exp.duration}</p>

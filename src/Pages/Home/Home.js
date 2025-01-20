@@ -25,32 +25,32 @@ const Home = () => {
                 More about me -{" "}
               </h3>
               <p>
-                👋 Hi there! I'm Dev a passionate web developer. I have a strong
-                background in frontend development using React and typescript,
-                as well as experience with various JavaScript and CSS libraries
-                and frameworks such as Next.JS and Tailwind. 🌐 In addition to
-                my frontend expertise, I have a decent understanding of backend
-                technologies like Node.js and Express.js. This knowledge enables
-                me to collaborate effectively with backend teams, bridging the
-                gap between the front and back ends of web development projects.
-                🚀 I'm excited to continue my journey in the tech world, eager
-                to learn and contribute to innovative projects. Let's connect
-                and explore opportunities together!
+                Hey there! I'm Dev - and yes, that's my real name! In what might
+                be the universe's most fitting coincidence, I also happen to be
+                a developer. Talk about destiny, right?. Well I'm currently
+                pursuing my Master's in Computer Applications. My aim is to
+                learn everything quickly and graduate at a senior level that's
+                why I like to work with startups. I also do freelance work when
+                I have nothing to do or just build cool stuff and share it on
+                twt to impress those cool anime dp anons. So far I have worked
+                with Javascript, on both frontend and backend. Right now, I'm
+                learning and doing Android Development and getting hands-on with
+                open-source projects.
               </p>
             </div>
           </div>
           <ul>
             <li>
               <p>
-                worked with few startups :{" "}
+                Places I've worked at so far :{" "}
                 <Link to={"/exp"}>
-                  <span>learn more</span>
+                  <span>show</span>
                 </Link>
               </p>
             </li>
             <li>
               <p>
-                building side projects in meantime :{" "}
+                Projects I built while learning :{" "}
                 <Link to={"/work"}>
                   <span>show</span>
                 </Link>
@@ -58,7 +58,7 @@ const Home = () => {
             </li>
             <li>
               <p>
-                solving leetcode sometime :{" "}
+                This is my mental gym btw :{" "}
                 <Link to={"https://leetcode.com/u/devpalwar/"} target="_blank">
                   <span>show</span>
                 </Link>
