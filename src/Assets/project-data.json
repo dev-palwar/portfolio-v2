@@ -53,6 +53,19 @@
         ]
     },
     {
+        "id": 14,
+        "img": "https://i.ibb.co/vxCg3Gj0/Screenshot-from-2025-01-29-22-46-51.png",
+        "heading": "Zentry-clone",
+        "link": "https://zentry-clone-wine.vercel.app/",
+        "github": "https://github.com/dev-palwar/zentry-clone",
+        "tech_Stack": [
+            "nextjs",
+            "tailwindcss",
+            "typescript",
+            "framer-motion"
+        ]
+    },
+    {
         "id": 5,
         "img": "https://nooblinux.com/wp-content/uploads/2023/03/anipy-cli-WatchDownload-Anime-Free-via-Terminal-in-Linux-1-768x432.png",
         "heading": ">_ Anime cli",
@@ -65,8 +78,8 @@
     {
         "id": 6,
         "img": "https://i.ibb.co/3fxSH41/image.png",
-        "heading": "The one you're currently on",
-        "link": "https://devpalwar.vercel.app/",
+        "heading": "Old portfolio website",
+        "link": "https://devpalwarold.vercel.app/",
         "github": "https://github.com/dev-palwar/Portfolio",
         "tech_Stack": [
             "react",

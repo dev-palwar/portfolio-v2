@@ -8,7 +8,7 @@ import {
   BiLogoJava,
 } from "react-icons/bi";
 import { SiExpress, SiTailwindcss } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandFramerMotion, TbBrandNextjs } from "react-icons/tb";
 
 export const SkillsIcons = [
   {
@@ -70,5 +70,11 @@ export const SkillsIcons = [
     color: "#f89820",
     skill: "java",
     name: "java",
+  },
+  {
+    Component: TbBrandFramerMotion,
+    color: "#ff00ff",
+    skill: "framer-motion",
+    name: "Framer Motion",
   },
 ];

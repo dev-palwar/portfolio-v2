@@ -4,15 +4,6 @@ import "./style.scss";
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Developer Intern",
-      company: "ThriberX",
-      duration: "Jan 2025 - Present",
-      responsibilities: [
-        "Creating smooth and modern mobile applications using Kotlin and Jetpack Compose.",
-      ],
-      link: "https://www.thriber.com/",
-    },
-    {
       title: "Frontend Developer Intern",
       company: "Lumara jewels",
       duration: "Dec 2023 - May 2024",
