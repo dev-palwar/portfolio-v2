@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "img": "https://i.ibb.co/ypgLYpg/Screenshot-2024-07-26-185750.png",
         "heading": "Movies-app",
+        "img": "https://i.ibb.co/ypgLYpg/Screenshot-2024-07-26-185750.png",
         "link": "https://github.com/dev-palwar/Movie-app",
         "github": "https://github.com/dev-palwar/Movie-app",
         "tech_Stack": [
@@ -11,14 +11,20 @@
             "expressjs",
             "mongodb",
             "nodejs"
+        ],
+        "features": [
+            "Responsive design",
+            "Dark mode support",
+            "Dynamic project showcase",
+            "Contact form with email integration"
         ]
     },
     {
         "id": 2,
-        "img": "https://i.ibb.co/rv33Z48/image.png",
-        "heading": "Cool Kids Collective",
-        "link": "https://cool-kids-collective.vercel.app/",
-        "github": "https://github.com/dev-palwar/cool-kids-collective",
+        "img": "https://i.ibb.co/cSNB2Pm3/image.png",
+        "heading": "Brand Storm",
+        "link": "https://brand-storm.vercel.app/",
+        "github": "https://brand-storm.vercel.app/",
         "tech_Stack": [
             "nextjs",
             "tailwindcss",
@@ -83,7 +89,8 @@
         "github": "https://github.com/dev-palwar/Portfolio",
         "tech_Stack": [
             "react",
-            "sass"
+            "sass",
+            "framer-motion"
         ]
     },
     {

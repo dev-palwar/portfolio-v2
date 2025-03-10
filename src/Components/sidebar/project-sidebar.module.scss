@@ -1,0 +1,225 @@
+$sidebar-width: 37vw;
+$sidebar-bg: #1a1a1a;
+$text-color: #ffffff;
+$accent-color: #6e56cf;
+$overlay-bg: rgba(0, 0, 0, 0.7);
+$border-radius: 8px;
+$transition-speed: 0.5s;
+
+// Overlay
+.projectSidebarOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-bg;
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity $transition-speed ease, visibility $transition-speed ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// Sidebar
+.projectSidebar {
+    position: fixed;
+    top: 0;
+    right: -$sidebar-width;
+    width: $sidebar-width;
+    height: 100%;
+    background-color: $sidebar-bg;
+    z-index: 999;
+    overflow-y: auto;
+    transition: right $transition-speed ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+
+    &.active {
+        right: 0;
+    }
+}
+
+// // Close button
+.closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: $text-color;
+    cursor: pointer;
+    z-index: 2;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+// Media Queries (placed separately)
+@media (max-width: 1024px) {
+    .closeButton {
+        display: flex;
+    }
+}
+
+@media (min-width: 1025px) {
+    .closeButton {
+        display: none;
+    }
+}
+
+
+// Project content
+.projectContent {
+    padding: 30px;
+    color: $text-color;
+}
+
+// Project image
+.projectImage {
+    margin-bottom: 24px;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+// Project title
+.projectTitle {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+// Project description
+.projectDescription {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+// Technologies
+.projectTechnologies {
+    margin-bottom: 24px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+}
+
+.techTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.techTag {
+    background-color: rgba(110, 86, 207, 0.2);
+    color: $accent-color;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+// Features
+.projectFeatures {
+    margin-bottom: 24px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            line-height: 1.5;
+
+            &:before {
+                content: "•";
+                color: $accent-color;
+                position: absolute;
+                left: 8px;
+            }
+        }
+    }
+}
+
+// Links
+.projectLinks {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: $border-radius;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+
+        span {
+            font-size: 15px;
+        }
+    }
+}
+
+.githubLink {
+    background-color: #2d2d2d;
+    color: $text-color;
+
+    &:hover {
+        background-color: #3a3a3a;
+    }
+}
+
+.liveLink {
+    background-color: $accent-color;
+    color: white;
+
+    &:hover {
+        background-color: darken($accent-color, 5%);
+    }
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+    .projectSidebar {
+        width: 100%;
+        right: -100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projectSidebar {
+        width: 70%;
+        right: -70%;
+    }
+}

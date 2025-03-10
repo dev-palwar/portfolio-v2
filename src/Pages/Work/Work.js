@@ -1,42 +1,64 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Work/Style.scss";
 import Card from "../../Components/Card/Card";
-import Data from "../../Assets/project-data.json";
-import Heading from "../../Components/Heading/Heading";
 import { LoadMore } from "../../Components/Loader/Loader";
 import { motion } from "framer-motion";
 import { animations } from "../../Styles/Animations/Animations";
 import { SkillsIcons } from "../../utils/icons";
+import ProjectSidebar from "../../Components/sidebar";
 
 const Work = () => {
-  const [projects, setProjects] = useState(Data.slice(0, 5));
+  const [projects, setProjects] = useState([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [display, setDisplay] = useState("none");
   const [selectedSkill, setSelectedSkill] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    fetch(process.env.REACT_APP_PROJECTS_DATA_URL)
+      .then((response) => response.json())
+      .then((data) => setProjects(data.slice(0, 5)))
+      .catch((error) => console.error("Error fetching projects:", error));
+  }, []);
 
   const handleShowAllProjects = () => {
-    setProjects(Data);
-    setShowAllProjects(true);
-    setDisplay(null);
+    fetch(process.env.REACT_APP_PROJECTS_DATA_URL)
+      .then((response) => response.json())
+      .then((data) => {
+        setProjects(data);
+        setShowAllProjects(true);
+        setDisplay(null);
+      })
+      .catch((error) => console.error("Error fetching full projects:", error));
   };
 
   const filterProjectsBySkill = (skill) => {
     setSelectedSkill(skill);
-    setProjects(() =>
-      Data.filter((project) => project.tech_Stack.includes(skill))
+    setProjects((prevProjects) =>
+      prevProjects.filter((project) => project.tech_Stack.includes(skill))
     );
   };
 
-  setTimeout(() => {
-    window.scrollTo({
-      top: 199,
-      behavior: "smooth",
-    });
-  }, 200);
+  const openSidebar = (project) => {
+    setSelectedProject(project);
+    setIsSidebarOpen(true);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+    setSelectedProject(null);
+  };
+
+  useEffect(() => {
+    const scrollTimeout = setTimeout(() => {
+      window.scrollTo({ top: 199, behavior: "smooth" });
+    }, 200);
+    return () => clearTimeout(scrollTimeout);
+  }, []);
 
   return (
     <div className="work">
-      {/* <Heading Heading={"my work"} /> */}
       <motion.div
         className="icons"
         {...animations.bar}
@@ -55,7 +77,9 @@ const Work = () => {
               color,
               cursor: "pointer",
               borderBottom:
-                selectedSkill === skill && "3px solid rgb(151, 117, 250)",
+                selectedSkill === skill
+                  ? "3px solid rgb(151, 117, 250)"
+                  : "none",
               borderRadius: "7px",
               paddingBottom: "3px",
             }}
@@ -65,23 +89,29 @@ const Work = () => {
       </motion.div>
 
       <div className="cards">
-        {projects.map((value) => (
+        {projects.map((project) => (
           <Card
-            key={value.id}
-            heading={value.heading}
-            url={value.link}
-            image={value.img}
-            github={value.github}
+            key={project.id}
+            heading={project.heading}
+            image={project.img}
+            github={project.github}
+            onClick={() => openSidebar(project)}
           />
         ))}
-        {!showAllProjects && (
+        {!showAllProjects && projects.length >= 5 && (
           <LoadMore
-            image={Data[5].img}
-            heading={"Show More"}
+            image={projects[5]?.img} // Safe optional chaining
+            heading="Show More"
             onClick={handleShowAllProjects}
           />
         )}
       </div>
+
+      <ProjectSidebar
+        isOpen={isSidebarOpen}
+        project={selectedProject}
+        onClose={closeSidebar}
+      />
     </div>
   );
 };
