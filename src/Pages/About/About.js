@@ -1,7 +1,6 @@
 import React from "react";
 import "../About/Style.scss";
 import { motion } from "framer-motion";
-import Heading from "../../Components/Heading/Heading";
 import { animations } from "../../Styles/Animations/Animations";
 import { SkillsIcons } from "../../utils/icons";
 

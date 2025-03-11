@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 
 const Experience = () => {
@@ -21,6 +20,17 @@ const Experience = () => {
 
   return (
     <section className="experience">
+      {/* Current Status Section */}
+      <div className="experience__current-status">
+        <p className="experience__status-text">
+          After completing my internship at Lumara Jewels, I took a career break
+          to focus on higher studies. <br /> I am currently pursuing a Master's
+          degree (2024-2026) at IPU, Delhi.
+        </p>
+        <h3 className="experience__status-title">
+          Current Status – Juggling clg and freelancing
+        </h3>
+      </div>
       {/* <Heading Heading={"Experience"} /> */}
       <div className="experience__list">
         {experiences.map((exp, index) => (

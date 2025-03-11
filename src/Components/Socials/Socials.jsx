@@ -5,7 +5,6 @@ import {
   AiFillTwitterCircle,
   AiOutlineGithub,
 } from "react-icons/ai";
-import { SiLeetcode } from "react-icons/si";
 
 const socialIcons = [
   {

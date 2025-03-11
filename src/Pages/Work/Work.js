@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "../Work/Style.scss";
 import Card from "../../Components/Card/Card";
+// import Data from "../../Assets/project-data.json";
 import { LoadMore } from "../../Components/Loader/Loader";
 import { motion } from "framer-motion";
 import { animations } from "../../Styles/Animations/Animations";
 import { SkillsIcons } from "../../utils/icons";
-import ProjectSidebar from "../../Components/sidebar";
+import ProjectSidebar from "../../Components/sidebar/Sidebar";
 
 const Work = () => {
   const [projects, setProjects] = useState([]);
+  const [allProjects, setAllProjects] = useState([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [display, setDisplay] = useState("none");
   const [selectedSkill, setSelectedSkill] = useState(null);
@@ -18,7 +20,10 @@ const Work = () => {
   useEffect(() => {
     fetch(process.env.REACT_APP_PROJECTS_DATA_URL)
       .then((response) => response.json())
-      .then((data) => setProjects(data.slice(0, 5)))
+      .then((data) => {
+        setProjects(data.slice(0, 5));
+        setAllProjects(data);
+      })
       .catch((error) => console.error("Error fetching projects:", error));
   }, []);
 
@@ -35,9 +40,13 @@ const Work = () => {
 
   const filterProjectsBySkill = (skill) => {
     setSelectedSkill(skill);
-    setProjects((prevProjects) =>
-      prevProjects.filter((project) => project.tech_Stack.includes(skill))
-    );
+    if (!skill) {
+      setProjects(allProjects.slice(0, 5));
+    } else {
+      setProjects(
+        allProjects.filter((project) => project.tech_Stack.includes(skill))
+      );
+    }
   };
 
   const openSidebar = (project) => {

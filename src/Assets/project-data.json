@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "heading": "Movies-app",
+        "heading": "Movies App",
         "img": "https://i.ibb.co/ypgLYpg/Screenshot-2024-07-26-185750.png",
-        "link": "https://github.com/dev-palwar/Movie-app",
+        "link": "https://reelink.vercel.app/",
         "github": "https://github.com/dev-palwar/Movie-app",
         "tech_Stack": [
             "react",
@@ -12,41 +12,17 @@
             "mongodb",
             "nodejs"
         ],
+        "description": "Created this app as a to-do list but for movies. Use it to create your watchlist instead of writing it in Notion. Revisit the app whenever you need to pick a show to watch! Clean and minimalistic.",
         "features": [
-            "Responsive design",
-            "Dark mode support",
-            "Dynamic project showcase",
-            "Contact form with email integration"
+            "Mobile-friendly",
+            "Works with movies, TV shows, and anime",
+            "Login to save your favorites for later"
         ]
     },
     {
         "id": 2,
-        "img": "https://i.ibb.co/cSNB2Pm3/image.png",
-        "heading": "Brand Storm",
-        "link": "https://brand-storm.vercel.app/",
-        "github": "https://brand-storm.vercel.app/",
-        "tech_Stack": [
-            "nextjs",
-            "tailwindcss",
-            "typescript"
-        ]
-    },
-    {
-        "id": 3,
-        "img": "https://i.ibb.co/K79tQjk/Screenshot-2023-11-30-at-21-01-17-Audiophile.png",
-        "heading": "Audiophile e-comm website",
-        "link": "https://audiophile-react.vercel.app",
-        "github": "https://github.com/dev-palwar/Audiophile-react",
-        "tech_Stack": [
-            "react",
-            "tailwindcss",
-            "redux"
-        ]
-    },
-    {
-        "id": 4,
-        "img": "https://i.ibb.co/k6QcvMJ/image.png",
         "heading": "Bloggy",
+        "img": "https://i.ibb.co/k6QcvMJ/image.png",
         "link": "https://blogyapp.vercel.app/",
         "github": "https://github.com/dev-palwar/Blogging-application-frontend",
         "tech_Stack": [
@@ -56,12 +32,77 @@
             "graphql",
             "typescript",
             "react"
+        ],
+        "description": "A clean and minimalistic blogging application designed for simplicity. At its core, the backend is powered by GraphQL, providing a flexible and efficient API for social media interactions. The backend is designed to be easily deployable on platforms like Vercel or Netlify, making it simple to integrate into your own application.",
+        "features": [
+            "Scalable GraphQL backend for efficient API handling",
+            "User authentication, post creation, upvotes, comments, and followers",
+            "Easily deployable on platforms like Vercel or Netlify",
+            "Uses MongoDB for efficient data management"
         ]
     },
     {
-        "id": 14,
+        "id": 3,
+        "heading": "Anime CLI",
+        "img": "https://nooblinux.com/wp-content/uploads/2023/03/anipy-cli-WatchDownload-Anime-Free-via-Terminal-in-Linux-1-768x432.png",
+        "link": "https://github.com/dev-palwar/Anime-cli",
+        "github": "https://github.com/dev-palwar/Anime-cli",
+        "tech_Stack": [
+            "nodejs"
+        ],
+        "description": "Built while learning web scraping. Enter an anime name, and it fetches relevant results, allowing you to download your choice. Planning to add more features in the future. PRs are welcome!",
+        "features": [
+            "Terminal-based application",
+            "Supports multiple video sizes",
+            "Easy to use"
+        ]
+    },
+    {
+        "id": 4,
+        "heading": "Typing Speed Tester",
+        "img": "https://i.ibb.co/Jky0TYy/Typing.png",
+        "link": "https://typing-tester-rho.vercel.app",
+        "github": "https://github.com/dev-palwar/Typing-tester",
+        "tech_Stack": [
+            "javascript"
+        ],
+        "description": "A simple yet effective typing speed tester built with JavaScript. It measures how fast you type and provides real-time feedback on your speed and accuracy.\n\nPerfect for practicing and improving your typing skills!",
+        "features": [
+            "Instant speed and accuracy feedback",
+            "Real-time word per minute (WPM) calculation",
+            "Minimal and distraction-free interface",
+            "Easy to use, just start typing!"
+        ]
+    },
+    {
+        "id": 5,
+        "heading": "Brand Storm",
+        "img": "https://i.ibb.co/cSNB2Pm3/image.png",
+        "link": "https://brand-storm.vercel.app/",
+        "tech_Stack": [
+            "nextjs",
+            "tailwindcss",
+            "typescript"
+        ],
+        "description": "I built this website for a social media agency. The current content is just placeholder text."
+    },
+    {
+        "id": 6,
+        "heading": "Audiophile E-commerce Website",
+        "img": "https://i.ibb.co/K79tQjk/Screenshot-2023-11-30-at-21-01-17-Audiophile.png",
+        "link": "https://audiophile-react.vercel.app",
+        "github": "https://github.com/dev-palwar/Audiophile-react",
+        "tech_Stack": [
+            "react",
+            "tailwindcss",
+            "redux"
+        ],
+        "description": "A solution to a project from [Frontend Mentor](https://www.frontendmentor.io/)"
+    },
+    {
+        "id": 7,
+        "heading": "Zentry Clone",
         "img": "https://i.ibb.co/vxCg3Gj0/Screenshot-from-2025-01-29-22-46-51.png",
-        "heading": "Zentry-clone",
         "link": "https://zentry-clone-wine.vercel.app/",
         "github": "https://github.com/dev-palwar/zentry-clone",
         "tech_Stack": [
@@ -69,101 +110,91 @@
             "tailwindcss",
             "typescript",
             "framer-motion"
-        ]
+        ],
+        "description": "A project I put together to learn Framer Motion and experiment with animations in React apps."
     },
     {
-        "id": 5,
-        "img": "https://nooblinux.com/wp-content/uploads/2023/03/anipy-cli-WatchDownload-Anime-Free-via-Terminal-in-Linux-1-768x432.png",
-        "heading": ">_ Anime cli",
-        "link": "https://github.com/dev-palwar/Anime-cli",
-        "github": "https://github.com/dev-palwar/Anime-cli",
-        "tech_Stack": [
-            "nodejs"
-        ]
-    },
-    {
-        "id": 6,
+        "id": 8,
+        "heading": "Old Portfolio Website",
         "img": "https://i.ibb.co/3fxSH41/image.png",
-        "heading": "Old portfolio website",
         "link": "https://devpalwarold.vercel.app/",
         "github": "https://github.com/dev-palwar/Portfolio",
         "tech_Stack": [
             "react",
             "sass",
             "framer-motion"
-        ]
+        ],
+        "description": "My old portfolio website. Use it if you want but just star the repo :)"
     },
     {
-        "id": 7,
-        "img": "https://i.ibb.co/Px0g6rn/Screenshot-2023-12-03-at-15-52-23-Crypto-app.png",
+        "id": 9,
         "heading": "DCrypto",
+        "img": "https://i.ibb.co/Px0g6rn/Screenshot-2023-12-03-at-15-52-23-Crypto-app.png",
         "link": "https://react-crypto-app1.vercel.app",
         "github": "https://github.com/dev-palwar/react-crypto-app",
         "tech_Stack": [
             "react",
             "chakraui"
+        ],
+        "description": "A sleek and responsive cryptocurrency tracker built with React and Chakra UI. Get real-time price updates, market trends, and essential data on your favorite cryptocurrencies.",
+        "features": [
+            "Live price tracking for various cryptocurrencies",
+            "Real-time market data updates",
+            "Dark mode support for better usability"
         ]
     },
     {
-        "id": 8,
-        "img": "https://i.ibb.co/Jky0TYy/Typing.png",
-        "heading": "Check your typing speed",
-        "link": "https://typing-tester-rho.vercel.app",
-        "github": "https://github.com/dev-palwar/Typing-tester",
-        "tech_Stack": [
-            "javascript"
-        ]
-    },
-    {
-        "id": 9,
+        "id": 10,
+        "heading": "To-Do App",
         "img": "https://i.ibb.co/m8tGb4X/Screenshot-2023-11-30-at-20-08-03-To-dos.png",
-        "heading": "To-do app",
         "link": "https://mytodolistapp0.vercel.app/",
         "github": "https://github.com/dev-palwar/To-do_list-app",
         "tech_Stack": [
             "javascript",
             "webpack"
-        ]
-    },
-    {
-        "id": 10,
-        "img": "https://i.ibb.co/dmn1VL2/Screenshot-2023-11-30-at-20-14-20-Dictionary.png",
-        "heading": "Dictionary app",
-        "link": "https://dev-palwar.github.io/DictionaryApp/",
-        "github": "https://github.com/dev-palwar/DictionaryApp",
-        "tech_Stack": [
-            "javascript"
-        ]
+        ],
+        "description": "Built this when I was learning JS and have been using it since then. It's minimalistic and clutter-free, making it easy to keep track of tasks in the browser, where I spend most of my time."
     },
     {
         "id": 11,
-        "img": "https://i.ibb.co/6JdDZjS/Screenshot-2023-11-30-at-20-18-20-Thumbnail-download.png",
-        "heading": "Youtube thumbnail downloader",
-        "link": "https://dev-palwar.github.io/Thumbnail-downloader/",
-        "github": "https://github.com/dev-palwar/Thumbnail-downloader",
-        "tech_Stack": [
-            "javascript"
-        ]
-    },
-    {
-        "id": 12,
-        "img": "https://d317jr06u12xtj.cloudfront.net/2023/01/Top-Chrome-Extensions-Social.png",
         "heading": "Text Translator Extension",
+        "img": "https://d317jr06u12xtj.cloudfront.net/2023/01/Top-Chrome-Extensions-Social.png",
         "link": "https://github.com/dev-palwar/translate-extension",
         "github": "https://github.com/dev-palwar/translate-extension",
         "tech_Stack": [
             "javascript"
+        ],
+        "description": "A browser extension that provides the meaning of selected text on a webpage. Currently, it only works on certain websites due to Content Security Policies (CSP)."
+    },
+    {
+        "id": 12,
+        "heading": "Telegram RSS Scraper & Notifier",
+        "img": "https://i.ibb.co/W4Tc1tjh/DALL-E-2025-03-11-20-35-37-A-futuristic-and-minimalistic-website-interface-displaying-a-Telegram-bot.webp",
+        "github": "https://github.com/dev-palwar/telegram-rss-feed-scraper",
+        "tech_Stack": [
+            "expressjs",
+            "javascript",
+            "nodejs",
+            "firebase"
+        ],
+        "description": "This was my first-ever freelance project! All you have to do is enter a channel name, and the website fetches the latest post, notifying all subscribed clients.\nIt consists of:\n\n\n **A Telegram bot** – Lets users update the channel name.\n\n **A website** – Pulls the latest posts from the channel’s RSS feed and sends notifications.\n\n The main feature of this project is thatit works for **any channel** without needing bot admin access.\nIf you prefer the traditional method, check out this one: [here](https://github.com/dev-palwar/chunnilaal-bot).",
+        "features": [
+            "A Telegram bot to update the channel name",
+            "Works for any channel",
+            "Firebase-enabled push notification service"
         ]
     },
     {
-        "id": 13,
+        "id": 15,
         "img": "https://i.ibb.co/2Ss63V9/twt-follow-all-ext.webp",
         "heading": "Twitter follow-all extension",
         "link": "https://github.com/dev-palwar/twt-follow-all-extension",
         "github": "https://github.com/dev-palwar/twt-follow-all-extension",
         "tech_Stack": [
             "typescript",
-            "react"
-        ]
+            "react",
+            "web-ext"
+        ],
+        "description": "Just one of the many assignment projects I worked on, but I found it cool enough to share here. It doesn’t have any useful features at the moment, but given its structure, it can be scaled to include things like posting tweets, liking, and auto-replying to comments"
     }
 ]

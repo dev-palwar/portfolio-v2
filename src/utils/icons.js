@@ -7,7 +7,7 @@ import {
   BiLogoTypescript,
   BiLogoJava,
 } from "react-icons/bi";
-import { SiExpress, SiTailwindcss } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandNextjs } from "react-icons/tb";
 
 export const SkillsIcons = [
@@ -28,12 +28,6 @@ export const SkillsIcons = [
     color: "cornsilk",
     skill: "nextjs",
     name: "Next.js",
-  },
-  {
-    Component: SiTailwindcss,
-    color: "skyblue",
-    skill: "tailwindcss",
-    name: "Tailwind CSS",
   },
   {
     Component: BiLogoNodejs,

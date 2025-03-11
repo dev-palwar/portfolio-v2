@@ -1,8 +1,9 @@
 "use client";
 
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { RxCross2 } from "react-icons/rx";
+import ReactMarkdown from "react-markdown";
 import styles from "./project-sidebar.module.scss";
-import { RxCross1, RxCross2 } from "react-icons/rx";
 
 const ProjectSidebar = ({ isOpen, project, onClose }) => {
   if (!project) return null;
@@ -20,7 +21,6 @@ const ProjectSidebar = ({ isOpen, project, onClose }) => {
       >
         <button className={styles.closeButton} onClick={onClose}>
           <RxCross2 size={15} />
-          {/* <span className="sr-only">Close</span> */}
         </button>
 
         <div className={styles.projectContent}>
@@ -32,7 +32,6 @@ const ProjectSidebar = ({ isOpen, project, onClose }) => {
           </div>
 
           <div className={styles.projectTechnologies}>
-            {/* <h3>Technologies</h3> */}
             <div className={styles.techTags}>
               {project.tech_Stack.map((tech, index) => (
                 <span key={index} className={styles.techTag}>
@@ -44,12 +43,10 @@ const ProjectSidebar = ({ isOpen, project, onClose }) => {
 
           <h2 className={styles.projectTitle}>{project.heading}</h2>
 
-          <p className={styles.projectDescription}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea libero
-            beatae itaque, sapiente magni quo recusandae. Officia voluptatem
-            totam et nostrum delectus nisi tempore, facilis, provident unde
-            impedit a veniam!
-          </p>
+          {/* Use ReactMarkdown to render the Markdown properly */}
+          <div className={styles.projectDescription}>
+            <ReactMarkdown>{project.description}</ReactMarkdown>
+          </div>
 
           {project.features && project.features.length > 0 && (
             <div className={styles.projectFeatures}>

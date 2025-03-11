@@ -3,7 +3,7 @@ import "../Card/Style.scss";
 import { AiFillGithub } from "react-icons/ai";
 import Loader from "../Loader/Loader";
 
-const Card = ({ heading, image, url, github, onClick }) => {
+const Card = ({ heading, image, github, onClick }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const handleImageLoad = () => {
@@ -14,20 +14,20 @@ const Card = ({ heading, image, url, github, onClick }) => {
     <div className="card" onClick={onClick}>
       <div className="image-section">
         {!isImageLoaded && <Loader />}
-        <a href={url} target="_blank" rel="noreferrer">
-          <img
-            className={`${isImageLoaded ? "loaded" : ""}`}
-            src={image}
-            alt=""
-            onLoad={handleImageLoad}
-          />
-        </a>
+        <img
+          className={`${isImageLoaded ? "loaded" : ""}`}
+          src={image}
+          alt=""
+          onLoad={handleImageLoad}
+        />
       </div>
       <div className="info">
         <h3>{heading}</h3>
-        <a href={github} target="_blank" className="buttons" rel="noreferrer">
-          <AiFillGithub />
-        </a>
+        {github && (
+          <a href={github} target="_blank" className="buttons" rel="noreferrer">
+            <AiFillGithub />
+          </a>
+        )}
       </div>
     </div>
   );
