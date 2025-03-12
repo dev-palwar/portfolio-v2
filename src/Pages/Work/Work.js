@@ -78,23 +78,26 @@ const Work = () => {
           display: display,
         }}
       >
-        {SkillsIcons.map(({ Component, color, skill, name }, index) => (
-          <Component
-            key={index}
-            title={name}
-            style={{
-              color,
-              cursor: "pointer",
-              borderBottom:
-                selectedSkill === skill
-                  ? "3px solid rgb(151, 117, 250)"
-                  : "none",
-              borderRadius: "7px",
-              paddingBottom: "3px",
-            }}
-            onClick={() => filterProjectsBySkill(skill)}
-          />
-        ))}
+        {SkillsIcons.map(
+          ({ Component, color, skill, name, display }, index) =>
+            display && (
+              <Component
+                key={index}
+                title={name}
+                style={{
+                  color,
+                  cursor: "pointer",
+                  borderBottom:
+                    selectedSkill === skill
+                      ? "3px solid rgb(151, 117, 250)"
+                      : "none",
+                  borderRadius: "7px",
+                  paddingBottom: "3px",
+                }}
+                onClick={() => filterProjectsBySkill(skill)}
+              />
+            )
+        )}
       </motion.div>
 
       <div className="cards">

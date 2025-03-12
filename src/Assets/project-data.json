@@ -12,7 +12,7 @@
             "mongodb",
             "nodejs"
         ],
-        "description": "Created this app as a to-do list but for movies. Use it to create your watchlist instead of writing it in Notion. Revisit the app whenever you need to pick a show to watch! Clean and minimalistic.",
+        "description": "Created this app as a to-do list but for movies. Use it to create your watchlist instead of writing them in your note-taking apps. Revisit the app whenever you need to pick a show to watch! Clean and minimalistic.",
         "features": [
             "Mobile-friendly",
             "Works with movies, TV shows, and anime",
@@ -54,7 +54,7 @@
         "features": [
             "Terminal-based application",
             "Supports multiple video sizes",
-            "Easy to use"
+            "Easy af to use"
         ]
     },
     {
@@ -153,12 +153,12 @@
             "javascript",
             "webpack"
         ],
-        "description": "Built this when I was learning JS and have been using it since then. It's minimalistic and clutter-free, making it easy to keep track of tasks in the browser, where I spend most of my time."
+        "description": "Built this when I was learning JS and have been using it ever since. It's minimalistic and clutter-free, making it easy to keep track of tasks in the browser, where I spend most of my time"
     },
     {
         "id": 11,
         "heading": "Text Translator Extension",
-        "img": "https://d317jr06u12xtj.cloudfront.net/2023/01/Top-Chrome-Extensions-Social.png",
+        "img": "https://i.ibb.co/jZ92qmPs/DALL-E-2025-03-12-17-53-57-A-modern-browser-window-with-a-magnifying-glass-hovering-over-highlighted.webp",
         "link": "https://github.com/dev-palwar/translate-extension",
         "github": "https://github.com/dev-palwar/translate-extension",
         "tech_Stack": [
@@ -177,7 +177,7 @@
             "nodejs",
             "firebase"
         ],
-        "description": "This was my first-ever freelance project! All you have to do is enter a channel name, and the website fetches the latest post, notifying all subscribed clients.\nIt consists of:\n\n\n **A Telegram bot** – Lets users update the channel name.\n\n **A website** – Pulls the latest posts from the channel’s RSS feed and sends notifications.\n\n The main feature of this project is thatit works for **any channel** without needing bot admin access.\nIf you prefer the traditional method, check out this one: [here](https://github.com/dev-palwar/chunnilaal-bot).",
+        "description": "This was my first-ever freelance project! All you have to do is enter a channel name, and the website fetches the latest post, notifying all subscribed clients.\nIt consists of:\n\n\n **A Telegram bot** – Lets users update the channel name.\n\n **A website** – Pulls the latest posts from the channel’s RSS feed and sends notifications.\n\n The main feature of this project is that it works for **any channel** without needing bot admin access.\nIf you prefer the traditional method, check out this one: [here](https://github.com/dev-palwar/chunnilaal-bot).",
         "features": [
             "A Telegram bot to update the channel name",
             "Works for any channel",

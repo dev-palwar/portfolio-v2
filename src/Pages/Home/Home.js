@@ -28,14 +28,14 @@ const Home = () => {
                 Hey there! I'm Dev - and yes, that's my real name! In what might
                 be the universe's most fitting coincidence, I also happen to be
                 a developer. Talk about destiny, right?. Well I'm currently
-                pursuing my Master's in Computer Applications. My aim is to
+                pursuing my Master's in Computer Applications 🎓. My aim is to
                 learn everything quickly and graduate at a senior level that's
-                why I like to work with startups. I also do freelance work when
-                I have nothing to do or just build cool stuff and share it on
-                twt to impress those cool anime dp anons. So far I have worked
-                with Javascript, on both frontend and backend. Right now, I'm
-                learning and doing Android Development and getting hands-on with
-                open-source projects.
+                why I like to work with startups 🚀. I also do freelance work
+                when I have nothing to do or just build cool stuff and share it
+                on twt to impress those cool anime dp anons. So far I have
+                worked with Javascript, on both frontend 🎨 and backend ⚙️.
+                Right now, I'm learning and doing Android Development and
+                getting hands-on with open-source projects 🌍.
               </p>
             </div>
           </div>
