@@ -1,0 +1,46 @@
+@import '../../Styles/Index.scss';
+
+.tools-section {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: start;
+    }
+
+    .tools-icons {
+        overflow: hidden;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .icon-slider {
+        gap: 1rem;
+        display: flex;
+        font-size: 3rem;
+        animation: slide 20s linear infinite;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+
+    .tool-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}

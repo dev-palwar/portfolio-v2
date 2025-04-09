@@ -1,5 +1,3 @@
-"use client";
-
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 import ReactMarkdown from "react-markdown";

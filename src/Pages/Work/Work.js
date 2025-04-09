@@ -88,11 +88,9 @@ const Work = () => {
                   color,
                   cursor: "pointer",
                   borderBottom:
-                    selectedSkill === skill
-                      ? "3px solid rgb(151, 117, 250)"
-                      : "none",
-                  borderRadius: "7px",
-                  paddingBottom: "3px",
+                    selectedSkill === skill ? "3px solid white" : "none",
+                  borderRadius: "5px",
+                  paddingBottom: "10px",
                 }}
                 onClick={() => filterProjectsBySkill(skill)}
               />

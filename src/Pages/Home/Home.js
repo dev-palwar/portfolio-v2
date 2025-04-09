@@ -4,11 +4,20 @@ import { motion } from "framer-motion";
 import { animations } from "../../Styles/Animations/Animations";
 import Socials from "../../Components/Socials/Socials";
 import { Link } from "react-router-dom";
+import Tools from "../../Components/Tools/Tools";
 
 const Home = () => {
   return (
     <>
-      <div className="home">
+      <div
+        className="home"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <div className="info-section">
           <div
             style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
@@ -38,6 +47,7 @@ const Home = () => {
                 getting hands-on with open-source projects 🌍.
               </p>
             </div>
+            <Tools />
           </div>
           <ul>
             <li>
