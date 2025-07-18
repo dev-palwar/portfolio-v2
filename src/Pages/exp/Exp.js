@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./style.scss";
+import { BsArrowLeft } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   const [experiences, setExperiences] = useState([]);
@@ -32,6 +34,10 @@ const Experience = () => {
           Current Status – Juggling clg and freelancing
         </h3>
       </div> */}
+
+      <Link to="/">
+        <BsArrowLeft style={{ fontSize: "2rem" }} />
+      </Link>
 
       <div className="experience__list">
         {experiences.map((exp, index) => (

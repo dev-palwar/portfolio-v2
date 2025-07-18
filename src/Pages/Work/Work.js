@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import { animations } from "../../Styles/Animations/Animations";
 import { SkillsIcons } from "../../utils/icons";
 import ProjectSidebar from "../../Components/sidebar/Sidebar";
+import { BsArrowLeft } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   const [projects, setProjects] = useState([]);
@@ -68,6 +70,9 @@ const Work = () => {
 
   return (
     <div className="work">
+      <Link to="/" style={{ marginBottom: "3rem" }}>
+        <BsArrowLeft style={{ fontSize: "2rem" }} />
+      </Link>
       <motion.div
         className="icons"
         {...animations.bar}

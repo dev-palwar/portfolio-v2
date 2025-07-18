@@ -43,8 +43,7 @@ const Home = () => {
                 I have nothing to do or just build cool stuff and share it on
                 twt to impress those cool anime dp anons. So far I have worked
                 with Javascript, on both frontend and backend. Right now, I'm
-                learning and doing Android Development and getting hands-on with
-                open-source projects.
+                learning Devops and advanced backends.
               </p>
             </div>
             <Tools />
